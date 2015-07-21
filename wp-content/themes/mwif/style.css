@@ -580,7 +580,6 @@ a:active {
 
 .main-navigation ul ul a {
 	width: 200px;
-        
 }
 
 .main-navigation ul ul li {
@@ -620,7 +619,7 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 600px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -634,6 +633,10 @@ a:active {
 .site-main .post-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
+}
+
+.site-main {
+    padding: 30px;
 }
 
 .comment-navigation .nav-previous,
@@ -863,6 +866,10 @@ a:active {
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
+}
+
+.entry-title {
+    margin-top: 0;
 }
 
 /*--------------------------------------------------------------

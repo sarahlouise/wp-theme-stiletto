@@ -122,8 +122,13 @@ function mwif_scripts() {
         
 //      Added Cutive Mono and Dosis Google Fonts
         wp_enqueue_style( 'mwif-googleFonts', 'http://fonts.googleapis.com/css?family=Dosis|Cutive+Mono' );
-
-	wp_enqueue_script( 'mwif-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+        
+        // Added Superfish for Accessablity, keep it above navigation 
+        wp_enqueue_script('mwif-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), '20150721', true);
+        //the following is dependant on the above
+        wp_enqueue_script( 'mwif-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('mwif-superfish'), '20140328', true );
+        
+        wp_enqueue_script( 'mwif-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'mwif-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
