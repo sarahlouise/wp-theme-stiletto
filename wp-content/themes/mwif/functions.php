@@ -117,9 +117,12 @@ add_action( 'widgets_init', 'mwif_widgets_init' );
  */
 function mwif_scripts() {
 	wp_enqueue_style( 'mwif-style', get_stylesheet_uri() );
+      
+        wp_enqueue_style( 'mwif-custom-homepage', get_template_directory_uri() . '/layouts/full-page-content.css');
         
-        wp_enqueue_style( 'mwif-google-fonts', 'https://www.google.com/fonts#UsePlace:use/Collection:Cutive+Mono');
-        
+//      Added Cutive Mono and Dosis Google Fonts
+        wp_enqueue_style( 'mwif-googleFonts', 'http://fonts.googleapis.com/css?family=Dosis|Cutive+Mono' );
+
 	wp_enqueue_script( 'mwif-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'mwif-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
