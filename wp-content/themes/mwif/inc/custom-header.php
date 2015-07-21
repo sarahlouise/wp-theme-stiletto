@@ -24,7 +24,7 @@
 function mwif_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'mwif_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '000000',
+		'default-text-color'     => 'ffffff',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
@@ -57,8 +57,7 @@ function mwif_header_style() {
 		// Has the text been hidden?
 		if ( 'blank' == $header_text_color ) :
 	?>
-		.site-title,
-		.site-description {
+		.site-branding {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}
