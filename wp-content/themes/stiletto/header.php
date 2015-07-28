@@ -31,9 +31,9 @@
 			<!-- Removed bloginfo; Added the MWIF Logo-->
 				<?php
 					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="https://s3-us-west-1.amazonaws.com/www.sarahkruberg.com/MWIF-submark-white.png" max-height="250px"></a></h1>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="https://s3-us-west-1.amazonaws.com/www.sarahkruberg.com/MWIF-submark-white.png" max-height="175px"></a></h1>
 					<?php else : ?>               
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="https://s3-us-west-1.amazonaws.com/www.sarahkruberg.com/MWIF-submark-white.png" max-height="250px"></a></p>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="https://s3-us-west-1.amazonaws.com/www.sarahkruberg.com/MWIF-submark-white.png" max-height="175x"></a></p>
 					
                                         <?php endif;
 
