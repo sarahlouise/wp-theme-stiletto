@@ -1,0 +1,85 @@
+/* !
+ Theme Name:   Twenty Fifteen Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       Sarah Kruberg
+ Author URI:   http://sarahkruberg.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+ 
+@import "compass";
+@import "compass/reset";
+
+// Here we import our partials
+@import "_partials/mixins";
+@import "_partials/variables";
+@import "_partials/typography";
+
+/*******HEADER STYLING*******/
+.nav-menu {
+    li {
+        border: none;
+            a {
+                color: $link-color;
+                text-align: center;
+                border: none;
+            }
+    } 
+} //end nav-menu
+
+.site-title {
+    h1 {
+        display: none;
+    }
+    p {
+        display: none;
+    }
+}
+.site-description {
+    display: none;
+}
+#menu-main-navigation {
+    border: none;
+    text-align: center;
+}
+
+.sidebar {
+    margin: 0 auto;
+}
+
+///////////////////////
+/*Body*/
+///////////////////////
+
+textarea {
+    color: $text-color;
+}
+
+///////////////////////
+/*Static Page Styling*/
+///////////////////////
+.info-text {
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    color: $text-color;
+}
+
+.info-text { 
+    h3 {
+        text-transform: uppercase;
+        padding-bottom: 0;
+        font-family: $header-font-family;
+        font-size: 16px;
+        font-weight: bolder;
+        margin: 0;
+        text-align: center;
+        color: $text-color;
+    }
+}
+
